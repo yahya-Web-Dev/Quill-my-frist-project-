@@ -1,0 +1,359 @@
+/* 1 rem = 16px */
+
+
+
+
+
+/* --------------------GLOBAL STYLES  -------------------- */
+
+:root{
+    /* font size */
+    --text-sm: 12px;
+    --text-base: 16px;
+    --text-paragraph: 20px;
+    /* font weight */
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+    /* Line Height */
+    --line-height-tight: 1.2;
+    --line-height-normal: 1.5;
+    /* letter spacing */
+    --letter-spacing-tight: -2px;
+    /* font family */
+    --font-family: 'Poppins', serif;
+    /* color */
+    --primary-base:   #339af0;
+    --primary-tint:   #d0ebff;
+    --primary-shade:  #1c7ed6;
+    --secondary-base: #9775fa;
+    --secondary-tint: #e5dbff;
+    --secondary-shade:#7048e8;
+    --tertiary-base:  #f5922b;
+    --tertiary-tint:  #ffe8cc;
+    --tertiary-shade: #f76707;
+    --grey-base:      #495057;
+    --grey-tint:      #f1f3f5;
+    --grey-shdae:     #212529;
+    --white:          #ffffff;
+    --black:          #000000;
+    /*------------------------------ */
+    --nav-height: 100px; 
+
+}
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-normal);
+    line-height: var(--line-height-normal);
+    color: var(--grey-base);
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+h1, h2, h3, h4, h5{
+    color: var(--grey-shdae);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: var(--letter-spacing-tight);
+    line-height: var(--line-height-tight);
+}
+.orange{
+    text-align: center;
+}
+
+
+h1{
+    letter-spacing: -2px;
+    font-size: 6.2rem;
+}
+h2{
+    font-size: 4.8rem;
+}
+h3{
+    font-size: 4rem;
+   
+
+}
+ h4{
+   
+    font-size: 3.2rem;
+
+ }
+
+ h5{
+    font-size: 2.4rem;
+ }
+
+p{ 
+    font-size: 2rem;
+    
+}
+
+a:link , a:visited{
+    color: var(--grey-base);
+}
+
+
+a{
+    
+    text-decoration: none;
+    font-size: 1.6rem;
+    display: inline-block;
+}
+span{
+    display: inline-block;
+}
+ul{
+    list-style: none;
+}
+
+.small-text{
+    font-size: 1.2rem;
+}
+/* -------------------- COMPONENTS -------------------- */
+.btn{
+    font-size: 1.6rem;
+    font-weight:400 ;
+    text-decoration: none;
+    padding: 1.5rem 3rem;
+    border-radius: 8px;
+}
+
+.btn-primary:link  ,.btn-primary:visited{
+    background-color: var(--primary-base);
+    color: #ffffff;
+    border: var(--primary-base) 2px solid;
+
+}
+.btn-primary-outline:link ,.btn-primary-outline:visited{
+    color: var(--primary-shade);
+    background-color: #ffffff;
+    border: var(--primary-shade) 2px solid;
+}
+
+
+.btn-primary-outline:hover ,.btn-primary-outline:active{
+    color: var(--primary-shade);
+    background-color: #ffffff;
+    border: var(--primary-shade) 2px solid;
+    transform: scale(1.05 , 1.05);
+    
+}
+
+.btn-primary:hover ,.btn-primary:active{
+    color: #ffffff;
+    background-color: var(--primary-shade);
+    border: var(--primary-shade) 2px solid;
+    transform: scale(1.05 , 1.05);
+}
+
+
+.btn-secondary:link, .btn-secondary:visited{
+    color: #ffffff;
+    background-color: var(--secondary-base);
+    border: var(--secondary-base) 2px solid;
+
+}
+
+
+.btn-secondary:hover, .btn-secondary:active{
+    color: #ffffff;
+    background-color: var(--secondary-shade);
+    border: var(--secondary-shade) 2px solid;
+    transform: scale(1.05 , 1.05);
+
+}
+.highlight{
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+.highlight-primary{
+ background-color: var(--primary-base);
+}
+
+.highlight-secondary{
+   background-color: var(--secondary-base);
+}
+.highlight-tertiary{
+    background-color: #ff922b;
+}
+.logo-md{
+    width: 100px;
+}
+.logo-sm{
+    width: 80px;
+}
+.icon{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    background-color: var(--primary-tint);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+}
+.icon:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+.icon-svg{
+    height: 5rem;
+    width: 5rem;
+}
+
+/* --------------------SECTIONS  -------------------- */
+
+
+
+/* ----- NAVBAR ----- */
+
+.navbar{
+    height: var(--nav-height);
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.navbar-btn{
+    display:flex;
+    gap: 2.5rem;
+}
+/* ----- HERO SECTION ----- */
+.HERO-section{
+    height: calc(100vh - var(--nav-height));
+    margin-bottom: 30rem;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hero-btn{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.hero-haeding{
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.hero-P{
+    margin-bottom: 5rem;
+    text-align: center;
+}
+/* ----- features SECTION ----- */
+.feature-section{
+    margin-bottom: 30rem;
+}
+
+.features-grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 15rem;
+    column-gap: 5rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.features-main-heading{
+    text-align: center;
+    margin-bottom: 8rem;
+}
+.feature-img{
+    max-width: 400px;
+    width: 100%;            /* the max width will no work if you dont add width: 100%; */
+}
+
+.feature-img-order{
+    grid-row: 2 /3 ;
+    grid-column: 1 /2 ;
+}
+
+.features-heading{
+    margin-bottom: 2rems;
+}
+
+
+/* ----- CTA SECTION ----- */
+.cta-section{
+    text-align: center;
+    height: 30rem;
+    margin-bottom: 30rem;
+    display: flex;
+    justify-content: center;
+}
+.cta-card{
+    text-align: center;
+    background-color: var(--primary-base);
+    max-width: 1000px;
+    padding: 10rem 20rem;
+    width: 100%;                       /* it get it ti 100% of the widht and with out it it  will be smaller*/
+    border-radius: 20px;
+
+}
+
+.cta-h2{
+    margin-bottom: 3rem;
+    color: #ffffff;
+}
+
+/* -----Footer ------*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.social-icons-footer{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer-nav{
+    display: flex;
+    gap: 1rem;
+}
+.social-icons{
+    width: 20px;
+}
+
+.heart-icon{
+    color: var(--secondary-base);
+}
+/* beta logo */
+/* .beta{
+    position: relative;
+}
+.beta::after{
+    content:"beta";
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.2rem;
+    background-color: var(--secondary-base);
+    padding: 0.5rem 1 rem ;
+    border-radius: 4px;
+    transform: translate(75% , -60%);
+    color: white;
+} */
