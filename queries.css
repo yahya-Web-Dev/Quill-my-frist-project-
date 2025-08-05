@@ -1,0 +1,74 @@
+/* LG SMALL-LAPTOPS 1024PX-1280PX */
+/* @ 1152px */
+
+
+@media(max-width:71.875rem){ 
+    html{
+        font-size: 56.25%; 
+        /* 9px */
+    }
+    .features-grid-container{
+        column-gap: 2rem;
+        
+    }
+    .cta-section{
+        margin-bottom: 20rem;
+    }
+}
+ /* MD TAPLET 768PX-1024PX */
+@media(max-width:51rem){ 
+    /* 816px */
+     html{
+        font-size: 50%; 
+        /* 8px */
+    }
+}
+/* PHONE LANDSCAPE 576PX-768 */
+@media(max-width:43rem){
+  html {
+    font-size: 43.75%;
+  }
+  .cta-card {
+    padding: 8rem 16rem;
+    
+  }
+  .features-grid-container{
+    row-gap: 5rem;
+    column-gap: 0.5;
+  }
+  .feature-section{
+    margin-bottom: 20rem;
+  }
+  .HERO-section{
+    margin-bottom: 0rem;
+  }
+}
+
+
+/* XS-PHONE  <576PX */
+@media(max-width:34rem){
+    html{
+        font-size: 37.5%; 
+        /* 6px */
+    }
+    .HERO-heading-br{
+        display: none;
+    }
+    .HERO-section{
+        height: auto;
+    }
+    .features-grid-container{
+        grid-template-columns:1fr ;
+    }
+    .feature-img-order{
+        grid-row: auto;
+        grid-column: auto;
+    }
+    .cta-card {
+    padding: 8rem 6rem;
+    
+  }
+}
+
+
+
